@@ -9,14 +9,13 @@
     justify-items: center;
 }
 nav {
-    margin:20px 20px 200px 15px;
+    margin:20px 20px 20px 15px;
     
 }
 
 a {
     width: 100%;
-    /* margin:20px 0px 0px 20px;   */
-    padding: 20px 20px 0px 20px;  
+    margin:20px 25px 0px 20px;  
     color: rgb(19, 17, 17);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -33,7 +32,7 @@ a::after {
     background-color: #ff004f;
     position: absolute;
     left:0;
-    bottom:-6px;
+    bottom:-6px; 
     transition: 0.5s;
 }
 
