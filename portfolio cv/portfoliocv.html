@@ -8,34 +8,42 @@
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 
 <body>
+
 	<div class="header">
 		<img class="logo" src="logo.jpg">
 		<!-- navbar -->
-		<nav class="nav">
+		<nav class="nav"> 
+
+		<!-- <nav class="nav"> -->
 			<a class="links" href="#">Acceuil</a>
-			<a class="links" href="#"> A propos de moi</a>
-			<a class="links" href="#">Mes services</a>
-			<a class="links" ref="#">Mes Projets</a>
-			<a class="links" ref="#">Contactez Moi</a>
+			<a class="links" href="#apropos"> A propos de moi</a>
+			<a class="links" href="#Mes competences">Mes comptences</a>
+			<a class="links" href="#Mes services">Mes services</a>
+			<a class="links" href="#Mes projets">Mes Projets</a>
+			<a class="links" href="#contact">Contactez Moi</a>
+		</nav>
+
 	</div>
-
-
-	<h1>Riad Reda fethi Developpeur web et web mobile</h1>
+	<h1 id="text">Riad Reda fethi Developpeur web et web mobile</h1>
 	<!-- a propos de Moi -->
-	<div class="apropo">
+	<div id="apropos" class="apropos">
 		<img class="profil" src="reda.jpg">
 		<h2>A propos de moi</h2>
-		<p>Je suis actuellement en formation de developpeur web et web mobile a afpa Marseille</p>
+		<p id="p">Je suis actuellement en formation de developpeur web et web mobile a afpa Marseille</p>
+
 
 	</div>
 	<div class="container">
-		<!-- Mes formations -->
+		<a id ="link" class="links" href="#formations">Mes formations</a>
 
+		<!-- !-- Mes formations : -->
+		<div class="formations">
 
-		<div class="formations"> <a class="link" href="#">Mes formations</a>
 			<p>Developpeur web et web mobile - 2023 </p>
 			<p>Certification java Jee Avril-2020</p>
 			<p>CEU santé humanitaire Fculté de medecine Marseille-2018</p>
@@ -45,17 +53,17 @@
 
 		</div>
 
+		<a id ="link1" class="links" href="#experiences">Experiences</a>
 
 		<div class="experiences">
-			<a class="link1" href="#">experiences</a>
 			<p>Hopital privé clairval - 2021 </p>
 			<p> Stage chez numeriCompta- 2021 </p>
 			<p>Docteur veterinaire-2002-2003 </p>
 		</div>
-
+		<a id ="link2" class="links" href="#centre">Centre d'interet</a>
 
 		<div class="centre">
-			<a class="link2" href="#">Centres d’intérêt</a>
+
 			<p>Football ,Aïkido , Musique, Voyages</p>
 			<p> Lecture</p>
 			<p>Langues parlées :Arabe (Maternelle), Italien (B2), Espagnole (B1),Anglais(B1) </p>
@@ -65,32 +73,37 @@
 
 	<!-- mes competences -->
 
-	<h2>Mes Competences</h2>
+	<h2 id="Mes competences">Mes Competences</h2>
+	<div class="competences">
 
-	<div class="frontEnd">
-		<img src="figma.png">
-		<p>maqueter une application</p>
-		<img src="html.png" >
-		<p>Html ,Css et javascript</p>
-		<img src="bootstrap.jpg" alt="">
-		<p> Bootsrap ,word-press </p>
-		<img src="mongodb.png">
-		<p>Créer une base de données</p>
-		<img src="php.png" >
-		<p>PhP ,MySql,express,Waamp,Nodejs </p>
-		<img src="git.png">
-		<p> Git,git-hub,git-lab</p>
+		<div class="frontEnd">
+			<img src="figma.png">
+			<p>maqueter une application</p>
+			<img src="html.png">
+			<p>Html ,Css et javascript</p>
+			<img src="bootstrap.jpg" alt="">
+			<p> Bootsrap ,word-press </p>
+		</div>
 
-		<P> Développer les composants d’accès aux données </P>
+		<div class="frontEnd">
+			<p>Créer une base de données</p>
+			<img src="mongodb.png">
+			<p>PhP ,MySql,express,Waamp,Nodejs </p>
+			<img src="php.png">
+		</div>
+
+		<div class="frontEnd">
+			<img src="git.png">
+			<p> Git,git-hub,git-lab</p>
+			<P> Développer les composants d/accès aux données </P>
+		</div>
+
 	</div>
 
 
-
 	<!-- mes services -->
-	<h2>Mes services</h2>
-<section class= "services">
-	
-	<div class="services">
+	<h2 id="Mes services">Mes services</h2>
+	<section class="services">
 
 		<div class="service">
 			<h3>developpement site web et web mobile</h3>
@@ -98,13 +111,13 @@
 			<details></details>
 		</div>
 
-		<div class="service">
+		<div id="serv1" class="service1">
 			<h3> Réaliser une interface utilisateur web statique et adaptable</h3>
 			<p>lorem ipsum</p>
 			<details></details>
 		</div>
 
-		<div class="service">
+		<div id ="serv2"class="service2">
 			<h3>Elaborer et mettre en œuvre des composants dans une application de gestion de contenu ou
 				e-commerce
 			</h3>
@@ -112,59 +125,87 @@
 			<details></details>
 		</div>
 
-	</div>
-</section>
+		</div>
+	</section>
 	<!-- mes projets -->
-	<h2>Mes projets</h2>
-<section class="projet">
+	<h2 id="Mes projets">Mes projets</h2>
+	<section class="projet">
 
-	
-		<div class="nba">
-			<img class="site" src="nbaa.jpg" alt="">
-			<div><a href="http://"><i class="fa-solid fa-link"></i></a></div>
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide">
+				<img src="nbaa.jpg" />
+				<div><a href="http://"><i class="fa-solid fa-link"></i></a></div>
+				<h3>Site de Ecommerce basket</h3>
+			  </div>
+			  
+			  <div class="swiper-slide">
+				<img src="nano.jpg" />
+				<div><a href="http://"><i class="fa-solid fa-link"></i></a></div>
+				<h3>Site pour une salle aikido</h3>
+			  </div>
+			  
+			  <div class="swiper-slide">
+				<img src="uber.webp">
+				<div><a href="http://"><i class="fa-solid fa-link"></i></a></div>
+				<h3>Site pour chauffeur uber </h3>
+				></div>
+			  </div>
+			
+			</div>
+		
 
-		</div>
-		<div class="aikido">
-			<img class="site" src="nano.jpg" alt="">
-			<div><a href="http://"><i class="fa-solid fa-link"></i></a></div>
+		
+	</class> 
+	</section>
 
-		</div>
-		<div class="uber">
-			<img class="site" src="uber.webp" alt="">
-			<div><a href="http://"><i class="fa-solid fa-link"></i></a></div>
-		</div>
-	</class=>
-</section>
-<br>		
-<h2>Contactez moi</h2>
+	<h2 id="contact">Contactez moi</h2>
 	<section class="contactezmoi">
+
 		<div class="contact">
-			<i class="fa-brands fa-facebook"></i>
-			<i class="fa-brands fa-linkedin"></i>
-			<i class="fa-brands fa-github"></i>
+			<a href="http:facebook.com"><i class="fa-brands fa-facebook"></i></a>
+			<a href="http:linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="http:github.com"><i class="fa-brands fa-github"></i></a>
 			<p>email:Riad.reda.fethi@gmail.com</p>
-			<P> telecharger mon cv en PDF</p>
-			<i class="fa-solid fa-download"></i>
-
+			<a href="CV Riad reda fethi pole emploi.pdf" download class="fa-solid fa-download"> Telecharger le cv en pdf</a>
 		</div>
-		
-			<form action="" method="post">
-
-				<input type="email" name="email" id="email" placeholder="entrez votre email"><br>
-				<input type="text" name="name" id="name" placeholder="entrez votre Nom"><br>
-				<textarea name="textearea" id="" cols="30" rows="10"></textarea><br>
-				<input class="submit" type="submit" value="Envoyer">
-				<input type="checkbox" name="checkbox" id="checkbox">
-				<label for="checkbox">accepter les csv</label>
-			</form>
-		
-	
-
-</section>
-<h4>droit reservé Riad reda fethi 2023</h4>
 
 
+<div class="formulaire">
+		<form action="" method="post">
+
+			<input type="email" name="email" id="email" placeholder="entrez votre email"><br>
+			<input type="text" name="name" id="name" placeholder="entrez votre Nom"><br>
+			<textarea name="textearea" id="" cols="30" rows="10"></textarea><br>
+			<input class="submit" type="submit" value="Envoyer">
+			<input type="checkbox" name="checkbox" id="checkbox">
+			<label for="checkbox">accepter les csv</label>
+		</form>
+	</div>
+	</section>
+	<h4>droit reservé Riad reda fethi 2023</h4>
+	<a href="#"><i class="fa-solid fa-circle-up"></i></a>
 	<script src="portfolio.js"></script>
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+	  var swiper = new Swiper(".mySwiper", {
+		effect: "coverflow",
+		grabCursor: true,
+		centeredSlides: true,
+		slidesPerView: "auto",
+		coverflowEffect: {
+		  rotate: 180,
+		  stretch: 0,
+		  depth: 100,
+		  modifier: 1,
+		  slideShadows: false,
+		},
+	
+	  });
+	</script>
 </body>
 
 </html>
