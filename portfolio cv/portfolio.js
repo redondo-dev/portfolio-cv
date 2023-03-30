@@ -52,22 +52,3 @@ link2.addEventListener("click", () => {
 link2.addEventListener("dblclick", () => {
   centre.style.display = "none";
 });
-
-// p.addEventListener((click) => {
-// const p = document.getElementById("p");
-// const splitp = p.innerText.split("");
-
-// p.innerHTML = "";
-// i = 0;
-// setInterval(function () {
-//   AjoutDeLettre();
-// }, 100);
-
-// function AjoutDeLettre() {
-//   if (i < splitp.length) {
-//     p.innerHTML += splitp[i];
-//     i++;
-//   }
-// }
-
-// })
